@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Contacter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-1,200..1000&family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style des pages/stylecontact.css">
+    <script>
+        function toggleMenu() {
+          document.querySelector('.nav-links').classList.toggle('active');
+        }
+      </script>
+</head>
+<body>
+    <div id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>  
+      <script>
+        window.onload = function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        };
+      </script>  
+    <div id="content" style="display: none;"></div>
+    <nav>
+       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+       <img src="contenue_image/logo.png" alt="chantiers ecoles" title="chantiers ecoles">
+       <ul class="nav-links">
+           <li class="Acceuil"> <a href="index.html" >Acceuil</a></li>
+           <li class="Nos_Formations"> <a href="nos_formations.html" >Nos Formations</a></li>
+           <li class="a_propos_de_nous"> <a href="A_propos_de_nous.html" >A Propos De Nous</a></li>
+           <li class="Nos_Projets"> <a href="Nos_Projets.html" >Nos Projets</a></li>
+       </ul>
+  </nav>
+
+  <header>
+  </header>
+
+  <section>
+    <div class="container">
+        <span class="badge">CONTACT INFO</span>
+        <h2><span class="highlight">Contact</span> &amp; se joindre</h2>
+        <p class="intro">
+            N’hésitez pas à nous contacter, l’équipe d’AMC est à votre écoute .
+        </p>
+    
+        <div class="cards">
+          <div class="card">
+            <div class="icon">📍</div>
+            <h3>Visiter Nous a</h3>
+            <p>Dar Sanaa (Ecole des Arts et Metiers),Bab El Okla - Tetouan</p>
+          </div>
+    
+          <div class="card">
+            <div class="icon">📞</div>
+            <h3>Applez-Nous au</h3>
+            <p>Tel : 0539993171<br>fax : 0539993171</p>
+          </div>
+    
+          <div class="card">
+            <div class="icon">✉️</div>
+            <h3>Mail Address</h3>
+            <p><br>Amc.cet@gmail.com</p>
+          </div>
+    
+          <div class="card">
+            <div class="icon">🕒</div>
+            <h3>Heure d'ouverture</h3>
+            <p>lun – ven : 9am – 3pm<br>samedi & dimanche (Fermer)</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="footer1">
+        <a href="https://www.linkedin.com/in/association-marocaine-chantiers-ecoles-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D8%A3%D9%88%D8%B1%D8%A7%D8%B4-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3-%D9%84%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9-1b11051bb/" class="Linkedin"><img src="contenue_image/Linkedin__Icône_Blanc.png" alt=""><p>Chantier-École</p></a>
+        <a href="https://www.facebook.com/AMCTetouan.Officiel" class="facebook"><img src="contenue_image/facebook icone.png" ><p>AMCTetouan.Officiel</p></a>
+        <a href="https://www.instagram.com/amchantiers" class="Instagram"><img src="contenue_image/Instagram_Icône.png" alt=""><p>amchantiers</p></a>
+        <a href="#" class="Whatsapp"><img src="contenue_image/Icône_Blanche_Whatsapp.png" alt=""><p>06xxxxxxxx</p></a>
+    </div>
+    <div class="footer2"><p>© 2025 Chantiers-Écoles. Tous droits réservés</p></div>
+</footer>
+</body>
+</html>

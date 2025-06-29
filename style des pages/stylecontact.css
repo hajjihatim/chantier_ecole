@@ -1,0 +1,259 @@
+/* CSS */
+
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007BFF; 
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  nav ul li a:hover::after {
+  width:100%;
+  }
+  
+nav{
+display: grid;
+grid-template-columns: auto auto;
+background-color: #9747FF;
+}
+nav img{
+    grid-column: 1/2;
+    padding: 5px;
+}
+nav ul{
+    padding-top: 15px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.menu-toggle{
+    display: none;
+}
+
+header{
+  background-image: url(../contenue_image/Group\ 32.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 40%; /* يعطي ارتفاع نسبي من العرض */
+}
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #777;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .highlight {
+    color: #e94e3f;
+  }
+  
+  .intro {
+    margin: 16px 0 40px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 24px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    text-align: left;
+  }
+  
+  .card .icon {
+    font-size: 2rem;
+  }
+  
+  .card h3 {
+    margin: 12px 0 8px;
+    font-size: 1.125rem;
+    color: #222;
+  }
+  
+  .card p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+  }
+  footer {
+    margin-top: 20px;
+    background-color: #9747FF;
+}
+.footer1 {
+    text-align: center; 
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer1 a {
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer1 a:hover {
+    transform: scale(1.1); 
+  }
+  
+  .footer1 img {
+    width: 34px;height: 34px;
+    vertical-align: middle;
+  }
+  
+  
+  .footer1 p {
+    margin-top: 10px;
+    font-size: 14px;
+  
+  }
+   
+.footer2{
+    font-size: 14px;
+    display: flex;
+    color: white;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.411);
+    justify-content: center;
+}
+.footer2 p{
+align-self: center;
+}
+
+
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    gap: 8px;
+  }
+  
+  #loader span {
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+  }
+  
+  #loader span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  #loader span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  @media (max-width: 780px) {
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#9747FF;
+        padding: 10px 20px;
+        position: relative;
+      }
+      
+      nav img {
+        width: 71px;
+      }
+      
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+      }
+     
+      .menu-toggle {
+        display: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+      }
+    
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+      flex-direction: column;
+      background-color: #9747FF;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 9999;
+    }
+  
+    .nav-links.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  
+    .nav-links li {
+      margin:10px 0px;
+  }}
+  

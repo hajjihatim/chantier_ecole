@@ -1,0 +1,436 @@
+*{
+    font-family: poppins;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007BFF; 
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  nav ul li a:hover::after {
+  width:100%;
+  }
+  
+nav{
+display: grid;
+grid-template-columns: auto auto;
+background-color:  green;
+}
+nav img{
+    grid-column: 1/2;
+    padding: 5px;
+}
+nav ul{
+    padding-top: 15px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.Acceuil{
+    grid-column: 1/2;
+}
+
+.A_Propos_De_Nous{
+    grid-column: 2/3;
+}
+.Nos_projets{
+    grid-column: 3/4;
+}
+.Contacter_Nous{
+    grid-column: 4/5; 
+}
+.menu-toggle{
+    display: none;
+}
+
+
+
+
+header{
+    background-image: url(../contenue_image/Group\ 23@2x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 45%; 
+  }
+.Question h1{
+    padding: 40px 0 20px 0;
+    font-size: 25px;
+    grid-column: 1/-1;
+    margin-top:0;
+    color: #0B5317;
+}
+.Question div{
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 3px gray;
+    box-shadow: -1px -1px 3px gray;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.Question{
+    column-gap:10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.q1{
+    grid-column: 1/2;
+}
+.q2{
+    grid-column: 2/3;
+}
+.q3{
+    grid-column: 3/4;
+}
+
+.Question div h1{
+padding:0;
+font-size: 16px;
+display: flex;
+align-items: center;
+background-color: green;
+color: aliceblue;
+border-radius: 5px 5px 0px 0px;
+height: 40px;
+justify-content: center;
+}
+.Specialites h2{
+font-size: 20px;
+}
+ h1{
+    font-size: 25px;
+    margin-top: 40px;
+   color: #0B5317;
+ 
+    }
+.Specialites{
+    padding: 20px 0;
+    background-color: #9affaa;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns:10px 1fr 2px 1fr 2px 1fr 10px ;
+    grid-row: repeat(3,1fr);
+    row-gap: 5px;
+    column-gap: 2px;
+}
+.Specialites h2{
+   padding: 0 10px 0 20px;
+ 
+    }
+.Specialites div{
+    background-color: #0a8a1fd2;
+    width: 100%;
+    border-radius: 4px;
+    color: white;
+    margin-top: 5px;
+}
+.Specialites div p{
+    padding: 20px 20px 10px 10px;
+font-size:14px;
+}
+#Forge{
+    grid-column: 2/3;
+}
+#Plomberie{
+    grid-column: 4/5;
+}
+#Zelige{
+    grid-column: 6/7;
+}
+#charpenterie{
+grid-row: 2/3;
+grid-column: 2/3;
+}
+#Electricite{
+    grid-row: 2/3;
+grid-column: 4/5;
+}
+#Gyps{
+    grid-row: 2/3;
+grid-column: 6/7;
+}
+#Travaux{
+    grid-row: 3/4;
+grid-column: 2/3;
+}
+#Jardinage{
+    grid-row: 3/4;
+grid-column: 4/5;
+}
+#peinture{
+    grid-row: 3/4;
+grid-column: 6/7;
+}
+
+
+footer {
+    margin-top: 40px;
+    background-color: #0B5317;
+}
+.footer1 {
+    background-color: #0B5317; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    text-align: center; /* توسيط النص */
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer1 a {
+   
+    color: #007BFF;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer1 a:hover {
+    transform: scale(1.1); 
+  }
+  
+  .footer1 img {
+    width: 34px;height: 34px;
+    vertical-align: middle;
+  }
+  
+ 
+  .footer1 p {
+    margin-top: 10px;
+    font-size: 14px;
+  color:#ccc;
+  }
+   
+.logo{
+    margin-top: -25px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 10px;
+}
+.footer2{
+    font-size: 14px;
+    display: flex;
+    color: white;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.411);
+    justify-content: center;
+}
+.footer2 p{
+align-self: center;
+
+}
+
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    gap: 8px;
+  }
+  
+  #loader span {
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+  }
+  
+  #loader span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  #loader span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+
+@media (max-width: 780px) {
+    *{
+        font-size: 14px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #006400;
+        padding: 10px 20px;
+        position: relative;
+      }
+      
+      nav img {
+        width: 71px;
+      }
+      
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+      }
+     
+      .menu-toggle {
+        display: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+      }
+    
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+      flex-direction: column;
+      background-color: #006400;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 9999;
+    }
+  
+    .nav-links.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  
+    .nav-links li {
+      margin:10px 0px;
+  }
+.Question h1{
+    font-size: 16px; 
+    grid-row: 1/2;
+    margin-bottom: 0;
+}
+.Question div{
+    max-width: 760px;
+    width: 100%;
+    
+}
+.Question div h1 {
+    font-size: 14px; 
+}
+.Question{
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:auto 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+.q1{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+.q2{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+}
+.q3{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+}
+
+.Specialites h2{
+    font-size: 20px;
+    }
+     h1{
+        font-size: 16px;
+     
+       color: #0B5317;
+       margin-bottom: 20px;
+     
+        }
+    .Specialites{
+        grid-template-columns: 1fr ;
+        grid-row: repeat(9,1fr);
+        row-gap: 10px;
+    }
+    .Specialites h2{
+        font-size: 14px;
+       padding: 0 10px 0 20px;
+     
+        }
+    .Specialites div{
+        max-width: 760px;
+        background-color: #0a8a1fd2;
+        width: 100%;
+        border-radius: 4px;
+        color: white;
+        margin-top: 5px;
+    }
+    .Specialites div p{
+        padding: 20px 20px 10px 10px;
+    font-size:12px;
+    }
+    #Forge{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+    #Plomberie{
+        grid-column: 1/-1; 
+        grid-row: 2/3;
+   }
+    #Zelige{
+        grid-column: 1/-1;  
+        grid-row: 3/4;
+      }
+    #charpenterie{
+    grid-row: 4/5;
+    grid-column: 1/-1;    }
+    #Electricite{
+        grid-row: 5/6;
+        grid-column: 1/-1;    }
+    #Gyps{
+        grid-row: 6/7;
+        grid-column: 1/-1;    }
+    #Travaux{
+        grid-row: 7/8;
+        grid-column: 1/-1;    }
+    #Jardinage{
+        grid-row: 8/9;
+        grid-column: 1/-1;    }
+    #peinture{
+        grid-row: 9/10;
+        grid-column: 1/-1;    }
+        footer {
+            margin-top: 10px;
+          
+        }
+        .footer2 {
+            font-size: 10px;
+            text-align: center;
+        }
+        .footer1 a p{
+            color: #007BFF;
+        }
+}
